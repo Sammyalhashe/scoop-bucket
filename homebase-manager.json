@@ -1,0 +1,30 @@
+{
+    "version": "nightly",
+    "description": "Homebase Manager - SSH & Health Dashboard",
+    "homepage": "https://github.com/Sammyalhashe/homebase-manager",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Sammyalhashe/homebase-manager/releases/download/nightly/homebase-windows.zip",
+            "hash": "HEAD"
+        }
+    },
+    "bin": "homebase_manager.exe",
+    "shortcuts": [
+        [
+            "homebase_manager.exe",
+            "Homebase Manager"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/Sammyalhashe/homebase-manager/releases/tags/nightly",
+        "jsonpath": "$.assets[?(@.name=='homebase-windows.zip')].updated_at"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Sammyalhashe/homebase-manager/releases/download/nightly/homebase-windows.zip"
+            }
+        }
+    }
+}
