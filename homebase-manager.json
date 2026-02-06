@@ -1,12 +1,12 @@
 {
-    "version": "nightly-20260205-162201",
+    "version": "nightly-20260205-225023",
     "description": "Homebase Manager - SSH & Health Dashboard",
     "homepage": "https://github.com/Sammyalhashe/homebase-manager",
     "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://github.com/Sammyalhashe/homebase-manager/releases/download/nightly/homebase-windows.zip",
-            "hash": "HEAD"
+            "hash": "f85d98948291c54cc8a9f80338f3efe64933ccc375890c2da507139e1e8b294b"
         }
     },
     "bin": "homebase_manager.exe",
